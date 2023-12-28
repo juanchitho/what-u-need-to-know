@@ -2,6 +2,7 @@ import './App.css';
 import CotiDolarBlue from './components/CotiDolarBlue';
 import CotiDolarOfi from './components/CotiDolarOfi';
 import CotiDolarCryp from './components/CotiDolarCryp';
+import ProximoFeriado from './components/ProximoFeriado';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
         <CotiDolarBlue />
         <CotiDolarOfi /> 
         <CotiDolarCryp />
-
+        <ProximoFeriado />
+      
                    
       </header>
       
