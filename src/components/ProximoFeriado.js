@@ -28,7 +28,7 @@ const FeriadosComponent = () => {
     
     title="Cotización del Dólar Blue">
       {feriadoProximo ? (
-        <p>El próximo feriado es el {feriadoProximo.motivo} el {feriadoProximo.fecha.toLocaleDateString()}</p>
+        <p>El próximo feriado es el <span>{feriadoProximo.motivo}</span> el <span>{feriadoProximo.fecha.toLocaleDateString()}</span> </p>
       ) : (
         <p>No hay feriados próximos.</p>
       )}

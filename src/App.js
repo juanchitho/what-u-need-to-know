@@ -12,10 +12,10 @@ function App() {
         <CotiDolarBlue />
         <CotiDolarOfi /> 
         <CotiDolarCryp />
-        <ProximoFeriado />
       
                    
       </header>
+        <ProximoFeriado />
       
       
     </div>

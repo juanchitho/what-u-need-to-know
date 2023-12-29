@@ -1,19 +1,19 @@
 
 
 
-.App-header {
+.App {
   background-color: #450795;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: left;
   justify-content: start;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(9px + 2vmin);
   
 }
 
 .divCotiDolar {
-  width: 320px;
+  width: 280px;
   height: 260px;
   border-radius: 10px;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
@@ -25,7 +25,7 @@
 
 .divFeriados {
   width: 320px;
-  height: 260px;
+  height: 140px;
   border-radius: 10px;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -34,5 +34,9 @@
   border: 1px solid #bcbcbc;
   background-color: plum;
   margin-top: 0.4rem;
+  margin-left: 0.4rem;
 }
-
+span{
+  font-weight: bolder;
+  color: darkblue;
+}
