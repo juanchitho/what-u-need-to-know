@@ -24,11 +24,12 @@ const FeriadosComponent = () => {
   }, []);
 
   return (
-    <div className="divFeriados"
-    
-    title="Cotización del Dólar Blue">
+    <div className='divFeriados'>
       {feriadoProximo ? (
-        <p>El próximo feriado es el <span>{feriadoProximo.motivo}</span> el <span>{feriadoProximo.fecha.toLocaleDateString()}</span> </p>
+        <div>
+          <p>El próximo feriado es el <span>{feriadoProximo.motivo} </span> el <span>{feriadoProximo.fecha.toLocaleDateString()} </span></p>
+          <p>Quedan <span>{calcularDiasRestantes(feriadoProximo.fecha)} </span> días para el próximo feriado.</p>
+        </div>
       ) : (
         <p>No hay feriados próximos.</p>
       )}
@@ -36,4 +37,11 @@ const FeriadosComponent = () => {
   );
 };
 
+const calcularDiasRestantes = (fechaFeriado) => {
+  const fechaActual = new Date();
+  const diferenciaEnMilisegundos = fechaFeriado.getTime() - fechaActual.getTime();
+  return Math.ceil(diferenciaEnMilisegundos / (1000 * 60 * 60 * 24));
+};
+
 export default FeriadosComponent;
+
