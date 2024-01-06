@@ -31,10 +31,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #bcbcbc;
   background-color: plum;
   margin-top: 0.4rem;
   margin-left: 0.4rem;
+  font-size: calc(9px + 2vmin);
 }
 span{
   font-weight: bolder;

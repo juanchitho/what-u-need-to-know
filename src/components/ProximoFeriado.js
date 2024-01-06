@@ -5,7 +5,7 @@ const FeriadosComponent = () => {
   const [feriadoProximo, setFeriadoProximo] = useState(null);
 
   useEffect(() => {
-    // Obtén la fecha de referencia (puedes ajustar esto según tus necesidades)
+    // Obtén la fecha de referencia 
     const fechaDeReferencia = new Date();
 
     // Convierte las fechas en objetos Date
